@@ -4,10 +4,10 @@ import Logo from '../../assets/images/Logo.png'
 const Header = () => {
     const links = <>
         <NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold pr-2" : "text-xl font-bold pr-2"
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>Home</NavLink>
         <NavLink to='/donation' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold pr-2" : "text-xl font-bold pr-2"
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>Donation</NavLink>
         <NavLink to='/statistics' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold" : "text-xl font-bold"
