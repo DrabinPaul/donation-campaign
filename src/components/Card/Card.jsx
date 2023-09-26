@@ -12,7 +12,7 @@ const Card = ({ card }) => {
     }
     return (
         <Link to={`/cardDetails/${id}`}>
-        <div className="card card-compact  md:w-[350px] lg:w-[300px] bg-base-100">
+        <div className="card card-compact  md:w-[350px] lg:w-[300px] bg-base-100 pb-2">
             <figure>
                 <img className="rounded-t-lg w-full h-[200px] lg:h-[170px] lg:w-[300px]" src={picture} alt="picture" />
             </figure>

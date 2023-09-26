@@ -1,20 +1,25 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveDonation } from "../../utility/localstorage";
 
 const CardDetails = () => {
     const categories = useLoaderData()
     const { id } = useParams()
     const idInt = parseInt(id);
     const category = categories.find((category) => category.id == idInt);
-    console.log(id, categories, category)
 
     const buttonStyle = {
         backgroundColor: category.color_text,
     };
 
 
-    // const handleDonation = () => {
-    //     saveCategory(idInt)
-    // }
+    const handleDonation = () => {
+        // saveCategory(idInt);
+        // toast("Donation has been successfully added !");
+        saveDonation(idInt);
+        toast("You have successfully donated!");
+    }
 
 
     return (
@@ -26,12 +31,13 @@ const CardDetails = () => {
                     </div>
                     <div className="absolute bg-black bg-opacity-60 inset-x-0 h-20 bottom-0">
                         <button
-                            // onClick={handleDonation}
+                            onClick={handleDonation}
                             style={buttonStyle}
                             className="text-white font-bold left-3 my-5 absolute p-2 ml-8 rounded-md"
                         >
                             Donation ${category.price}
                         </button>
+                        <ToastContainer />
                     </div>
                 </div>
                 <h1 className="font-bold text-4xl pt-3">{category.title}</h1>
