@@ -16,7 +16,7 @@ const Donated = ({ donated }) => {
 
         <div className="card md:card-side bg-base-100 lg:h-[200px] lg:w-[620px] mb-2">
             <figure><img className='md:h-full md:w-[250px]' src={picture} alt="picture" /></figure>
-            <div className="pt-5 h-[200px] md:w-[500px] lg:w-[400px] rounded-lg md:rounded-r-lg pl-3" style={cardBodyStyle}>
+            <div className="pt-5 h-[200px] md:w-[500px] lg:w-[400px] md:rounded-r-lg pl-3" style={cardBodyStyle}>
                 <h3 style={cardTextBg} className="w-1/3 rounded-lg text-base font-bold text-center pb-1">{category}</h3>
                 <h2 className="card-title text-2xl font-bold pb-1">{title}</h2>
                 <h2 className="card-title">${price}.00</h2>

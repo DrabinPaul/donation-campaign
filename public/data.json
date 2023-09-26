@@ -33,7 +33,7 @@
         "color_text_bg": "#79C23F33"
     },
     {
-        "id": 4,
+        "id":4,
         "picture": "https://i.ibb.co/nr7K31P/pexels-julia-m-cameron-6995247.jpg",
         "category": "Food",
         "title": "Better Food for Everyone",
@@ -88,7 +88,7 @@
         "color_text_bg": "#0052FF33"
     },
     {
-        "id": 9,
+        "id":9,
         "picture": "https://i.ibb.co/WyFN2nG/pexels-pixabay-40751.jpg",
         "category": "Health",
         "title": "Clean water for children",
@@ -110,7 +110,7 @@
         "color_text_bg": "#FF444A33"
     },
     {
-        "id": 11,
+        "id":11,
         "picture": "https://i.ibb.co/TTPY1G8/pexels-rdne-stock-project-8580732.jpg",
         "category": "Clothing",
         "title": "Used Clothing Drive",

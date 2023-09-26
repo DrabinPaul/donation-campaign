@@ -1,6 +1,6 @@
 import Cover from '../../assets/images/banner.png'
 
-const Banner = () => {
+const Banner = ({handleSearch}) => {
   const bannerImage = {
     backgroundImage: `url(${Cover})`
   }
@@ -15,6 +15,7 @@ const Banner = () => {
               <input
                 name="search"
                 type="text"
+                onChange={handleSearch}
                 placeholder="Search Here"
                 className="py-3 p-5 w-2/3 rounded-l-lg border"
               />

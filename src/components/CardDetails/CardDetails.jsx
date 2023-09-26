@@ -15,8 +15,6 @@ const CardDetails = () => {
 
 
     const handleDonation = () => {
-        // saveCategory(idInt);
-        // toast("Donation has been successfully added !");
         saveDonation(idInt);
         toast("You have successfully donated!");
     }
@@ -27,7 +25,7 @@ const CardDetails = () => {
             <div className="justify-center items-center w-[1100px]">
                 <div className=" relative ">
                     <div className="flex justify-center items-center">
-                        <img src={category.picture} className="rounded-lg w-full h-[300px] md:h-[500px]" />
+                        <img src={category.picture} className="rounded-t-lg w-full h-[300px] md:h-[500px]" />
                     </div>
                     <div className="absolute bg-black bg-opacity-60 inset-x-0 h-20 bottom-0">
                         <button
