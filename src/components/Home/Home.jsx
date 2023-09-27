@@ -13,7 +13,6 @@ const Home = () => {
             cards.category.toLowerCase().startsWith(key)
         );
         setSearchCards(filters);
-        console.log(filters)
     };
 
     useEffect(() => {
@@ -22,7 +21,6 @@ const Home = () => {
             .then((data) => {
                 setSearchCards(data);
                 setCards(data);
-                console.log(data)
             });
     }, []);
 

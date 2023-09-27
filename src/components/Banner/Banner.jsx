@@ -5,7 +5,7 @@ const Banner = ({handleSearch}) => {
     backgroundImage: `url(${Cover})`
   }
   return (
-    <div className="hero h-[70vh] rounded" style={bannerImage}>
+    <div className="hero h-[70vh] rounded mt-3" style={bannerImage}>
       <div className="hero-overlay bg-white bg-opacity-95"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="">
